@@ -1,0 +1,69 @@
+$white: #EEEFF7;
+
+$aqua-blue: #92CDCF;
+$light-aqua-blue: #c7e5e6;
+$aqua-red: #cf92af;
+
+$ocean-blue: #2185C5;
+
+$graphite: #31353D;
+
+$black: #1C1D21;
+
+$ttime: 0.75s;
+$sidebar-width: 120px;
+$nav-color: lawngreen;
+
+.baraxis line, .baraxis path {
+  shape-rendering: crispEdges;
+  stroke: black;
+  fill: none;
+}
+
+.bar {
+  fill: $aqua-blue;
+  transition: 0.5s;
+}
+
+.bar:hover {
+  fill: $aqua-red;
+  transition: 0.5s;
+}
+
+.baraxis {
+  font: 15px sans-serif;
+}
+
+.baraxis path,
+.baraxis line {
+  fill: none;
+  stroke: $black;
+  shape-rendering: crispEdges;
+}
+
+.x.baraxis path {
+  display: none;
+}
+
+.large-12.columns {
+  height: 95%;
+}
+
+.scatteraxis path,
+.scatteraxis line {
+  fill: none;
+  stroke: $white;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: transparent;
+}
+
+.scatter {
+  margin: 0 auto;
+  display: block;
+  width: 960;
+  height: 500;
+  margin-top: 50px;
+}
