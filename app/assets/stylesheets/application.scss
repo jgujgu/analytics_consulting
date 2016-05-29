@@ -16,3 +16,9 @@
 
 @import "materialize";
 @import "scatter";
+@import "styles";
+@media #{$medium-and-up} {
+  .container-desktop {
+    margin-left: 240px;
+  }
+}

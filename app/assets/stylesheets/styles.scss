@@ -1,0 +1,17 @@
+$grey: #fafafa;
+$cyan: #00bcd4;
+.side-nav .brand-logo {
+  height: inherit;
+}
+.side-nav--link {
+  color: $grey !important;
+  transition: 0.5s;
+}
+.side-nav--link:hover,.side-nav--link:focus {
+  color: $cyan !important;
+  transition: 0.5s;
+}
+img.responsive-img {
+  max-width: 50%;
+  height: auto;
+}
