@@ -27,7 +27,7 @@ $(document).ready(function() {
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var fillColor = "#EEEFF7";
+  var fillColor = "#000000";
 
   d3.tsv("flowers.tsv", function(error, data) {
     if (error) throw error;

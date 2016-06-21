@@ -1,3 +1,10 @@
 <h3>
-  <%= @services %>
+  Services
 </h3>
+<ul class="collection">
+  <% @services.each do |s| %>
+    <li class="collection-item">
+      <%= s %>
+    </li>
+  <% end %>
+</ul>
