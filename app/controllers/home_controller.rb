@@ -29,30 +29,37 @@ class HomeController < ApplicationController
     @technologies = [
       {
         description: "Kubernetes--Google's open-source cluster-management software--makes scaling easy, and, even, automatic.",
+        link: "http://kubernetes.io/",
         image: "kubernetes_logo.png"
       },
       {
         description: "TensorFlow plays nicely with Kubernetes, allowing for training in a fraction of the time on multiple GPUs on a cluster.",
+        link: "https://www.tensorflow.org/",
         image: "tensorflow.png"
       },
       {
         description: "R for rigorous analysis and insightful graphing.",
+        link: "https://www.r-project.org/",
         image: "R-Programming.png"
       },
       {
         description: "D3 makes data beautiful and interactive.",
+        link: "https://d3js.org/",
         image: "Logo_D3.svg.png"
       },
       {
         description: "Kafka creates the one source of truth for all your data, simplfying transmission of it from database to database, focused on streaming data.",
+        link: "http://kafka.apache.org/",
         image: "kafka-logo-tall.png"
       },
       {
         description: "Docker allows for simplified application deployment, enabling one time configuration.",
+        link: "https://www.docker.com/",
         image: "large_v-dark.png"
       },
       {
         description: "Rails is the most convenient web framework out there, providing the backbone for deployed applications of any size.",
+        link: "http://rubyonrails.org/",
         image: "Ruby_on_Rails.svg.png"
       },
     ]
