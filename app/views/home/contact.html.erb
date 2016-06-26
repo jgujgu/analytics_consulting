@@ -1,7 +1,22 @@
 <h4>
-  (location of Galvanize coworking space)
+  Contact us
 </h4>
-<h4>
-  <%= @address[:street] %>
-  <%= @address[:city_state] %>
-</h4>
+<%= form_tag contact_path do -%>
+  <%= hidden_field_tag :bot_catcher %>
+  <div class="input-field">
+    <%= email_field_tag :email, "", class: "email" %>
+    <label for="email" class="cyan-text">Email</label>
+  </div>
+  <div class="input-field">
+    <%= text_area_tag(:message, "", size: "24x6", class: "materialize-textarea") %>
+    <label for="message" class="cyan-text">Message</label>
+  </div>
+  <%= submit_tag 'Submit', class: "btn cyan" %>
+<% end -%>
+<div class="map-container">
+  <h4>
+    <%= @address[:street] %>
+    <%= @address[:city_state] %>
+  </h4>
+  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsandcondiitionssample.com">terms and conditions sample</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(39.7335134,-104.9925877),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(39.7335134,-104.9925877)});infowindow = new google.maps.InfoWindow({content:'<strong>Fink Analytical Consulting</strong><br>1062 Delaware Street Denver, CO 80204 <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+</div>

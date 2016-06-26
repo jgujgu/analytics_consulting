@@ -88,4 +88,18 @@ class HomeController < ApplicationController
       city_state: "Denver, CO 80204"
     }
   end
+
+  def contact_success
+    @success_message = "Thank you for your message."
+    @next_steps = "Either Sean or Jeff will get back to you shortly."
+  end
+
+  def post_contact
+    if params[:bot_catcher].empty?
+      MessageNotifier.send_message(params[:email], params[:message]).deliver
+      redirect_to contact_success_path
+    else
+      redirect_to "www.google.com"
+    end
+  end
 end
