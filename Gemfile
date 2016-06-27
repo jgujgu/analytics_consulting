@@ -25,6 +25,8 @@ gem 'materialize-sass'
 gem "d3-rails"
 gem 'rails_12factor', group: :production
 gem "figaro"
+gem 'underscore-rails'
+gem 'gmaps4rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

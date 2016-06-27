@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery
+//= require underscore
 //= require materialize-sprockets
 //= require d3
+//= require gmaps/google
 //= require_tree .
