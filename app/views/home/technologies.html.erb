@@ -7,19 +7,15 @@
   </p>
 </div>
 <% @technologies.each do |technology| %>
-  <div class="card-panel grey lighten-5 z-depth-1">
-    <div class="row valign-wrapper">
-      <div class="col s2">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <a href="<%= technology[:link] %>" target="_blank"><%= technology[:name] %></a>
+    </div>
+    <div class="panel-body">
+      <div class="thumbnail">
         <%= image_tag(technology[:image], class: "responsive-img") %>
       </div>
-      <div class="col s10">
-        <h5 class="black-text">
-          <%= technology[:description] %>
-        </h5>
-        <h5 class="black-text">
-          <a href="<%= technology[:link] %>" target="_blank">Project Page</a>
-        </h5>
-      </div>
+      <%= technology[:description] %>
     </div>
   </div>
 <% end %>
