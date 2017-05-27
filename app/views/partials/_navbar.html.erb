@@ -1,15 +1,8 @@
-<ul id="slide-out" class="side-nav fixed black">
-  <li>
-    <a href="/" class="brand-logo cyan-text">
-      <h4>
-        Fink Analytical Consulting
-      </h4>
-    </a>
-  </li>
-  <%= render partial: "partials/nav_links" %>
-</ul>
-<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-
-<script type="text/javascript" charset="utf-8">
-  $(".button-collapse").sideNav();
-</script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Fink Analytics</a>
+    </div>
+    <%= render partial: "partials/nav_links" %>
+  </div>
+</nav>

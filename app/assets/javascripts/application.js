@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require jquery
 //= require underscore
-//= require materialize-sprockets
+//= require bootstrap-sprockets
 //= require d3
 //= require gmaps/google
 //= require_tree .

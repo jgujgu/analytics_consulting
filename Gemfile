@@ -21,12 +21,13 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'monologue'
-gem 'materialize-sass'
-gem "d3-rails"
+gem "d3-rails", :git => 'git://github.com/iblue/d3-rails', :ref => '316644'
 gem 'rails_12factor', group: :production
 gem "figaro"
 gem 'underscore-rails'
 gem 'gmaps4rails'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootswatch-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

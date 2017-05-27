@@ -3,15 +3,19 @@
 </h4>
 <%= form_tag contact_path do -%>
   <%= hidden_field_tag :bot_catcher %>
-  <div class="input-field">
-    <%= email_field_tag :email, "", class: "email" %>
-    <label for="email" class="cyan-text">Email</label>
+  <div class="form-group">
+    <div class="input-field">
+      <label for="email" class="cyan-text">Email</label>
+      <%= email_field_tag :email, "", class: "form-control", id: "email" %>
+    </div>
+    <div class="input-field">
+      <label for="textArea" class="cyan-text">Message</label>
+      <%= text_area_tag(:message, "", size: "24x6", class: "form-control", id: "textArea") %>
+    </div>
   </div>
-  <div class="input-field">
-    <%= text_area_tag(:message, "", size: "24x6", class: "materialize-textarea") %>
-    <label for="message" class="cyan-text">Message</label>
+  <div class="form-group">
+    <%= submit_tag 'Submit', class: "btn btn-success" %>
   </div>
-  <%= submit_tag 'Submit', class: "btn cyan" %>
 <% end -%>
 <div class="map-container">
   <h4>
