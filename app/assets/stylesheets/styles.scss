@@ -1,3 +1,92 @@
+$purple: #48364E !important;
+$blue: #0275D8 !important;
+$red: #f0836b !important;
+$white: #ffffff !important;
+$dark: #006932 !important;
+$green: #12b15d !important;
+$black: #323232 !important;
+$dark-grey: #949494 !important;
+$grey: #cbcbcb !important;
+@font-face {
+  font-family: 'DDCHardware-Condensed';
+  src:url('DDCHardware-Condensed.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DDCHardware-Compressed';
+  src:url('DDCHardware-Compressed.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src:url('SourceSansPro-Regular') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Semibold';
+  src:url('SourceSansPro-Semibold') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .thumbnail {
   max-width: 15%;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 5px;
+  width: auto;
+}
+
+h1,h2 {
+  font-family: 'DDCHardware-Compressed';
+  font-size: 2.5em ;
+  line-height: 2.375rem;
+  color: $black;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: $black;
+}
+
+h3 {
+  font-family: 'DDCHardware-Condensed';
+  font-size: 1em;
+  line-height: 1em;
+  color: $black;
+}
+
+p {
+  font-family: 'SourceSansPro-Regular';
+  font-size: 1em;
+  line-height: 1em;
+  color: $black;
+}
+
+a {
+  font-family: 'SourceSansPro-Semibold';
+  font-size: 1em;
+  line-height: 1em;
+  color: $blue;
+}
+
+.nav-link {
+  color: $dark-grey;
+}
+
+.btn-primary {
+  background-color: $green;
+  border: none;
+  color: $white;
 }

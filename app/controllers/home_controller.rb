@@ -96,8 +96,8 @@ class HomeController < ApplicationController
 
   def contact
     @address = {
-      street: "1062 Delaware Street",
-      city_state: "Denver, CO 80204"
+      street: "2332 Clay St",
+      city_state: "Denver, CO 80211"
     }
   end
 
