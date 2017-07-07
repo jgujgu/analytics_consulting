@@ -9,28 +9,28 @@ $dark-grey: #949494 !important;
 $grey: #cbcbcb !important;
 @font-face {
   font-family: 'DDCHardware-Condensed';
-  src:url('DDCHardware-Condensed.otf') format('opentype');
+  src:font-url('DDCHardware-Condensed.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'DDCHardware-Compressed';
-  src:url('DDCHardware-Compressed.otf') format('opentype');
+  src:font-url('DDCHardware-Compressed.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SourceSansPro-Regular';
-  src:url('SourceSansPro-Regular') format('opentype');
+  src:font-url('SourceSansPro-Regular') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SourceSansPro-Semibold';
-  src:url('SourceSansPro-Semibold') format('opentype');
+  src:font-url('SourceSansPro-Semibold') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
